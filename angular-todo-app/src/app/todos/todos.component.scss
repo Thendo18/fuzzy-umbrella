@@ -15,12 +15,14 @@
     top: 15%;
 }
 .btn{
-    background-color:liner gradient (to right rgb(236 , 72, 140), rgb(250,54,82));
+    background: linear-gradient(to right, rgb(236,72,140), rgb(250,54,82));
     position: absolute;
     left: 630px;
-   border: none;
+    top: 19%;
+       border: none;
 height: 28px;
  color: white;
+ font-weight: 600;
 }
 
 .container{
