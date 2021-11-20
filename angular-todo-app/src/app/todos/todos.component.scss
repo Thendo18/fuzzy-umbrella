@@ -22,11 +22,14 @@
    
 }
 
-.card{
+.container{
     width: 700px;
     height: 100px;
-    background-color: whitesmoke;
+    background-color: white;
 position: absolute;
 left: 280px;
 top: 30%;
+margin-top: -20px;
+border-radius: 4px;
+box-shadow: 0px 4px 12px;
 }
