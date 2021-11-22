@@ -35,7 +35,7 @@ opacity: 0.9;
     height: 100px;
     background-color: white;
 position: absolute;
-left: 180px;
+left: 280px;
 top: 31%;
 margin-top: -20px;
 border-radius: 4px;
@@ -45,8 +45,19 @@ box-shadow: 0px 4px 12px rgba(black, 0.08);
 .container1{
     background-color: red;
     position: absolute;
-    left: 180px;
+    left: 280px;
     top: 40%;
     width: 700px;
     height: 100px;
+}
+
+.todo-item{
+display: flex;
+flex-direction: row;
+font-size: 18px;
+
+}
+
+.form-check-input{
+  color: black;
 }
