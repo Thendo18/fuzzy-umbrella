@@ -48,7 +48,7 @@ box-shadow: 0px 4px 12px rgba(black, 0.08);
     left: 280px;
     top: 40%;
     width: 700px;
-    height: 100px;
+    height: 300px;
 }
 
 .todo-item{
@@ -69,7 +69,7 @@ justify-content: space-between;
     }
 }
 
-.form-iterm-left{
+.form-item-left{
     display: flex;
     align-items: center;
 }
@@ -78,4 +78,23 @@ justify-content: space-between;
     padding: 10px;
     border: 1px solid white;
     margin-left: 12px;
+}
+
+.container3{
+    padding: 1px;
+height: 2px;
+
+}
+
+.clear-completed{
+    position: absolute;
+left: 80%;
+padding: 0.1px;
+
+}
+
+.items-number{
+ text-align:right;
+
+
 }
