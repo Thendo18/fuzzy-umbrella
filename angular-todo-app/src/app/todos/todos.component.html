@@ -16,10 +16,10 @@
 <div class="container1">
 
    
-    <div class="todo-item" >
-      <div class="todo-item-left">
+    <div class="todo-item"  *ngFor="let todo of todos" >
+      <div class="todo-item-left" >
         <input  type="checkbox" >
-        <div class="todo-item-label"  *ngFor="let to of todos; let i = index">something</div>
+        <div class="todo-item-label">{{todo.title}}</div>
       </div>
  
      <div class="remove-item">
@@ -49,13 +49,6 @@
         </div>
 
 
-
-  <ul>
-    <li *ngFor="let todo of todos">
-
-    </li>
-  </ul>
-`,
       </div>
  
 

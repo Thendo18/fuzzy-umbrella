@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.scss']
 })
 export class TodosComponent implements OnInit {
-  todos: object[] = [];
+  todos!:any[];
   constructor() { }
 
   ngOnInit() {
