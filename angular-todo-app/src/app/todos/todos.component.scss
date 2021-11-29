@@ -59,3 +59,23 @@ animation-duration: 0.3s;
 justify-content: space-between;
 }
 
+.remove-item{
+  
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 14px;
+    &:hover{
+        color: red;
+    }
+}
+
+.form-iterm-left{
+    display: flex;
+    align-items: center;
+}
+
+.form-check-label{
+    padding: 10px;
+    border: 1px solid white;
+    margin-left: 12px;
+}
