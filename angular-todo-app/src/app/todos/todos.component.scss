@@ -53,8 +53,9 @@ box-shadow: 0px 4px 12px rgba(black, 0.08);
 
 .todo-item{
 display: flex;
-flex-direction: row;
 font-size: 18px;
-
+margin-bottom: 12px;
+animation-duration: 0.3s;
+justify-content: space-between;
 }
 
