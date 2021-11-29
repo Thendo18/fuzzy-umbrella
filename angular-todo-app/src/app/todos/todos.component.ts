@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.scss']
 })
 export class TodosComponent implements OnInit {
-todos: object[] | undefined;
+  todos: object[] = [];
   constructor() { }
 
   ngOnInit() {
-    this.todos = [
+  this.todos = [
       {
         'id': 1,
         'title': 'Clean the house',
-        'completed': true,
+        'completed': false,
         'editing': false
       },
       {   'id': 2,
