@@ -31,7 +31,7 @@ export class TodosComponent implements OnInit {
       }
     ];
   }
-  addTodo() {
+  addTodo(){
     if (this.todoTitle.trim().length === 0) {
       return;
     }

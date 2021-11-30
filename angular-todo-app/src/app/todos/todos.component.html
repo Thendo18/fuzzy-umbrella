@@ -4,10 +4,10 @@
 
 <div class="container">
 
-  <div class="form">
+
   <label for="todo-input" class="form-label" [(ngModel)]="todoTitle" ></label>
-      <textarea class="form-control" id="todo-input"rows="3" placeholder="what needs to be done"  [(ngModel)]="todoTitle" (keyup.enter)="addTodo()"></textarea>
-    </div>
+     
+      <input class="form-control" type="text" placeholder="what needs to be done" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()"> 
     <button type="button" class="btn">+Add</button>
   </div>
 <br />
