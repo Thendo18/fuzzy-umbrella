@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosComponent implements OnInit {
   todos!:any[];
+ todoTitle! : string;
   constructor() { }
 
   ngOnInit() {
+    this.todoTitle= '';
   this.todos = [
       {
         'id': 1,
@@ -29,6 +31,17 @@ export class TodosComponent implements OnInit {
       }
     ];
   }
+  addTodo() {
+    if (this.todoTitle.trim().length === 0) {
+      return;
+    }
+    this.todos.push({
+      id: this.todos.length + 1,
+      title: this.todoTitle,
+      completed: false,
+      editing: false
+    });
+    this.todoTitle = '';
   }
 
-
+}
