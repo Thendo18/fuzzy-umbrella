@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.scss']
 })
 export class TodosComponent implements OnInit {
-  todos!:any[];
+  todos!:Todo[];
  todoTitle! : string;
+ idForTodo = 1;
   constructor() { }
 
   ngOnInit() {
@@ -36,12 +38,25 @@ export class TodosComponent implements OnInit {
       return;
     }
     this.todos.push({
-      id: this.todos.length + 1,
+      id: this.idForTodo,
       title: this.todoTitle,
       completed: false,
       editing: false
     });
     this.todoTitle = '';
+    this.idForTodo++;
+  }
+ 
+  deleteTodo(id: number) {
+    this.todos = this.todos.filter(todo => todo.id !== id);
+
   }
 
+}
+
+interface Todo {
+id: number,
+title: string,
+completed: boolean,
+editing: boolean
 }

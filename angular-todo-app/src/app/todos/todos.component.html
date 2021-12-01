@@ -22,8 +22,8 @@
         <div class="todo-item-label">{{todo.title}}</div>
       </div>
  
-     <div class="remove-item">
-        <span aria-hidden="true">&times;</span>
+     <div class="remove-item" type="button" (click)= "deleteTodo(todo.id)">
+  &times;
      </div>
     </div>
 
