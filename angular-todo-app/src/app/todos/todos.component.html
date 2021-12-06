@@ -19,8 +19,12 @@
     <div class="todo-item"  *ngFor="let todo of todos" >
       <div class="todo-item-left" >
         <input  type="checkbox" >
-        <div class="todo-item-label">{{todo.title}}</div>
-        <input type="text" class="todo-item-edit">
+        <div *ngif="!todo.editing" class="todo-item-label" (dblclick)= "editTodo(todo)">{{todo.title}}</div>
+        
+ 
+           <input type="text" class="todo-item-edit" [(ngModel)] = "todo.title">
+    
+       
       </div>
  
      <div class="remove-item" type="button" (click)= "deleteTodo(todo.id)">
