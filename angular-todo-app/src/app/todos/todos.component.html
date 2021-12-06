@@ -1,0 +1,63 @@
+<div class="title">To-dos</div>
+<br />
+
+
+<div class="container">
+
+
+  <label for="todo-input" class="form-label" [(ngModel)]="todoTitle" ></label>
+     
+      <input class="form-control" type="text" placeholder="what needs to be done" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()"> 
+    <button type="button" class="btn">+Add</button>
+  </div>
+<br />
+
+
+<div class="container1">
+
+   
+    <div class="todo-item"  *ngFor="let todo of todos" >
+      <div class="todo-item-left" >
+        <input  type="checkbox" >
+        <div *ngif="!todo.editing" class="todo-item-label" (dblclick)= "editTodo(todo)">{{todo.title}}</div>
+        
+ <ng-template #editingTodo>
+           <input type="text" class="todo-item-edit" [(ngModel)] = "todo.title">
+    
+ </ng-template>
+      </div>
+ 
+     <div class="remove-item" type="button" (click)= "deleteTodo(todo.id)">
+  &times;
+     </div>
+    </div>
+
+        <div class="container2">
+        <label> <input type="checkbox"> check all </label>
+ <h6> 4 items left</h6> 
+     </div>
+ 
+
+
+
+        <div class="container3">
+      <div  class="active">
+      <button>All</button>
+      <button>Active</button>
+      <button>Completed</button>
+          </div>
+        </div>
+
+
+        <div>
+          <button class="clear-completed ">Clear completed</button>
+        </div>
+
+
+      </div>
+ 
+
+
+
+
+
