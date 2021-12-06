@@ -1,6 +1,6 @@
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
-
+import { Todo } from '../interfaces/todo';
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
@@ -54,9 +54,3 @@ export class TodosComponent implements OnInit {
 
 }
 
-interface Todo {
-id: number,
-title: string,
-completed: boolean,
-editing: boolean
-}
